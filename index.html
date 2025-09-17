@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Gizi</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Custom Style */
+        .hero {
+            background: url("https://images.unsplash.com/photo-1606788075761-7b8c2a4f3b2e") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #2ecc71;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="assets/img/LOGO.png" alt="Logo" width="200" height="50" class="me-2"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#manfaat">Manfaat</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Jumbotron dengan background -->
+    <section class="jumbotron text-white text-center d-flex align-items-center"
+        style="background: url('assets/img/makanan-sehat.jpg') no-repeat center center/cover; height: 50vh; position: relative;">
+        <div class="container position-relative z-1">
+            <h1 class="display-4 fw-bold">Pola Hidup Sehat dengan Gizi Seimbang</h1>
+            <p class="lead mb-4">
+                Ketahui pentingnya menjaga asupan gizi untuk kesehatan tubuh dan kualitas hidup yang lebih baik.
+            </p>
+            <a href="#tentang" class="btn btn-success btn-lg">Pelajari Lebih Lanjut</a>
+        </div>
+        <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5);"></div>
+    </section>
+
+   <!-- Bootstrap Icons & CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  /* Card custom */
+  .info-card {
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Icon bulat */
+  .icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .bg-primary-light { background: #0d6efd; }
+  .bg-warning-light { background: #f39c12; }
+  .bg-danger-light  { background: #e74c3c; }
+
+  /* Animasi fade in */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+
+    <!-- Paragraf awal rata kiri -->
+    <section id="tentang" class="py-5">
+  <div class="container">
+    <div class="text-center mt-4">
+      <h2 class="text-success fw-bold fade-in">Tentang Gizi</h2>
+      <h3 class="mt-4">Gizi Seimbang</h3>
+    </div>
+
+    <!-- Paragraf awal -->
+    <p class="text-start mt-3">
+      <b>
+        Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat gizi dalam jenis dan jumlah
+        sesuai dengan kebutuhan tubuh. Konsep ini memastikan tubuh memperoleh energi ⚡, protein 💪,
+        vitamin 🍊, mineral, serat 🌽, dan air 💧 secara cukup. Dengan menjaga pola makan seimbang, tubuh dapat tetap sehat ❤️, aktif 🤸, dan berkonsentrasi optimal 🎯.  
+        Gizi seimbang juga membantu mencegah berbagai penyakit seperti obesitas ⚖️, diabetes, dan anemia.
+      </b>
+    </p>
+  </div>
+</section>
+
+
+
+     <!-- Bagian Gizi Seimbang -->
+<section id="gizi" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 text-success">🌱 Gizi Seimbang untuk Hidup Lebih Sehat</h2>
+    <div class="row g-4">
+
+      <!-- Prinsip -->
+      <div class="col-md-6">
+        <div class="card info-card p-4 shadow-sm border-0 h-100">
+          <h4 class="fw-bold text-primary text-center mb-4">📌 Prinsip Gizi Seimbang</h4>
+          <ul class="list-unstyled mb-0">
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Mengonsumsi makanan beragam setiap hari</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Batasi gula, garam, dan lemak berlebih</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Menjaga kebersihan makanan & lingkungan</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Rutin aktivitas fisik minimal 30 menit</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Perhatikan ukuran porsi makan sesuai kebutuhan</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <div class="icon-circle bg-primary-light"><i class="bi bi-check-circle-fill"></i></div>
+              <span>Memantau berat badan secara teratur</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Komponen -->
+      <div class="col-md-6">
+        <div class="card info-card p-4 shadow-sm border-0 h-100">
+          <h4 class="fw-bold text-warning text-center mb-4">🍎 Komponen Utama</h4>
+          <ul class="list-unstyled mb-0">
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Karbohidrat</b>: sumber energi utama (nasi, roti, kentang, jagung)</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Protein</b>: pembangun tubuh (ikan, telur, daging, kacang-kacangan)</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Lemak sehat</b>: energi cadangan & fungsi organ (alpukat, kacang, ikan laut)</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Vitamin & Mineral</b>: metabolisme tubuh (sayur & buah)</span>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Serat</b>: melancarkan pencernaan & menurunkan kolesterol</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <div class="icon-circle bg-warning-light"><i class="bi bi-check2-square"></i></div>
+              <span><b>Air</b>: minum min. 8 gelas per hari</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contoh Penerapan -->
+    <div class="row g-4 mt-4">
+      <div class="col-md-12">
+        <div class="card info-card p-4 shadow-sm border-0">
+          <h4 class="fw-bold text-danger text-center mb-4">🍽️ Contoh Penerapan Sehari-hari</h4>
+          <div class="row">
+            <div class="col-md-4">
+              <h6 class="text-danger fw-bold">🌅 Sarapan</h6>
+              <ul>
+                <li>Oatmeal + buah pisang</li>
+                <li>Telur rebus</li>
+                <li>Segelas susu rendah lemak</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-danger fw-bold">☀️ Makan Siang</h6>
+              <ul>
+                <li>½ piring sayur (brokoli, wortel, bayam)</li>
+                <li>⅓ piring nasi merah</li>
+                <li>⅙ piring ayam panggang</li>
+                <li>Buah potong segar</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-danger fw-bold">🌙 Makan Malam</h6>
+              <ul>
+                <li>Sup sayur</li>
+                <li>Ikan bakar</li>
+                <li>Ubi rebus</li>
+                <li>Air putih hangat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips & Fakta Menarik -->
+    <div class="row g-4 mt-4">
+      <div class="col-md-6">
+        <div class="card info-card p-4 shadow-sm border-0 h-100">
+          <h4 class="fw-bold text-success mb-3">💡 Tips Sehat</h4>
+          <ul>
+            <li>Minum air hangat setelah bangun tidur</li>
+            <li>Batasi minuman manis kemasan</li>
+            <li>Gunakan piring kecil untuk mengontrol porsi</li>
+            <li>Makan buah sebagai camilan, bukan snack kemasan</li>
+            <li>Biasakan makan tepat waktu, jangan menunda</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card info-card p-4 shadow-sm border-0 h-100">
+          <h4 class="fw-bold text-info mb-3">🤔 Fakta Menarik</h4>
+          <ul>
+            <li>Air putih membantu meningkatkan konsentrasi otak</li>
+            <li>Sayuran berwarna hijau gelap kaya zat besi</li>
+            <li>Buah jeruk kaya vitamin C untuk daya tahan tubuh</li>
+            <li>Serat bisa membuat kenyang lebih lama</li>
+            <li>Protein hewani lebih lengkap, tapi protein nabati lebih ramah kolesterol</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Pastikan memasukkan Bootstrap CSS di <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Manfaat -->
+<section id="manfaat" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-success fw-bold mt-4 mb-4">Manfaat Gizi Seimbang</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/orang-lari.jpg" class="card-img-top manfaat-img" 
+               alt="Energi" data-title="Menambah Energi" 
+               data-text="Tubuh manusia memerlukan energi untuk melakukan aktivitas sehari-hari, mulai dari bekerja, belajar, hingga berolahraga. Energi utama berasal dari karbohidrat, namun juga didukung oleh lemak sehat dan protein. Jika kebutuhan energi terpenuhi dengan baik, tubuh akan lebih bertenaga, tidak cepat lelah, dan lebih produktif.">
+          <div class="card-body">
+            <h5 class="card-title">Menambah Energi</h5>
+            <p class="card-text">Membantu tubuh tetap aktif dan bersemangat sepanjang hari.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" 
+               class="card-img-top manfaat-img" alt="Kesehatan"
+               data-title="Meningkatkan Kesehatan"
+               data-text="Gizi seimbang membantu sistem imun tubuh tetap kuat dalam melawan penyakit. Dengan asupan vitamin, mineral, dan antioksidan yang cukup, tubuh lebih tahan terhadap infeksi, mempercepat proses penyembuhan, serta mengurangi risiko penyakit kronis seperti diabetes, hipertensi, dan penyakit jantung.">
+          <div class="card-body">
+            <h5 class="card-title">Meningkatkan Kesehatan</h5>
+            <p class="card-text">Menjaga daya tahan tubuh dan mencegah penyakit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/perkembangan-anak.jpg" class="card-img-top manfaat-img" 
+               alt="Tumbuh Kembang" data-title="Tumbuh Kembang Optimal" 
+               data-text="Pada masa pertumbuhan, anak-anak membutuhkan zat gizi lengkap agar fisik, otak, dan kemampuan kognitif berkembang dengan baik. Kekurangan gizi pada masa ini dapat mengakibatkan gangguan pertumbuhan, menurunkan kecerdasan, serta melemahkan daya tahan tubuh. Oleh karena itu, pola makan seimbang sejak dini sangat penting untuk masa depan anak.">
+          <div class="card-body">
+            <h5 class="card-title">Tumbuh Kembang Optimal</h5>
+            <p class="card-text">Mendukung pertumbuhan anak yang sehat dan cerdas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Petunjuk -->
+    <div class="text-end mt-3">
+      <small class="text-muted fst-italic">Klik gambar untuk lebih detail</small>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Pop Up -->
+<div class="modal fade" id="popupManfaat" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content animate__animated animate__zoomIn faster">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popupTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="popupImg" src="" alt="" class="img-fluid rounded mb-3">
+        <p id="popupText" class="text-start"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script Bootstrap + Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script Modal -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const popupManfaat = document.getElementById("popupManfaat");
+    const popupTitle = document.getElementById("popupTitle");
+    const popupImg = document.getElementById("popupImg");
+    const popupText = document.getElementById("popupText");
+
+    const modal = new bootstrap.Modal(popupManfaat);
+
+    document.querySelectorAll(".manfaat-img").forEach(img => {
+      img.addEventListener("click", function () {
+        popupTitle.textContent = this.dataset.title;
+        popupImg.src = this.src;
+        popupText.textContent = this.dataset.text;
+        modal.show();
+      });
+    });
+
+    // Reset konten saat modal ditutup
+    popupManfaat.addEventListener("hidden.bs.modal", () => {
+      popupImg.src = "";
+      popupTitle.textContent = "";
+      popupText.textContent = "";
+    });
+  });
+</script>
+
+
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5 fade-in">
+        <div class="container text-center">
+            <h2 class="text-success fw-bold zoom-in">Kontak</h2>
+            <p class="mt-3 slide-left">Hubungi kami untuk informasi lebih lanjut mengenai gizi dan kesehatan.</p>
+            <p class="slide-right">Email: <a href="pklsera234@gmail.com">gmail</a></p>
+            <p class="slide-right">Instagram: <a
+                    href="https://www.instagram.com/polkesriau?igsh=MW9ycWttbHQ1MDk0MQ==">Instagram</a></p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Gizi Sehat. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        const elements = document.querySelectorAll('.fade-in, .slide-left, .slide-right, .zoom-in');
+
+        function checkScroll() {
+            const triggerBottom = window.innerHeight * 0.85;
+            elements.forEach(el => {
+                const boxTop = el.getBoundingClientRect().top;
+                const boxBottom = el.getBoundingClientRect().bottom;
+
+                // Kalau elemen masuk viewport → tambahkan animasi
+                if (boxTop < triggerBottom && boxBottom > 50) {
+                    el.classList.add('show');
+                } else {
+                    // Kalau keluar viewport → reset supaya bisa animasi lagi
+                    el.classList.remove('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+    </script>
+
+</body>
+
+</html>
