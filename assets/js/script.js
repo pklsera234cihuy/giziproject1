@@ -27,3 +27,19 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
+
+
+  document.addEventListener("clik", () => {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      });
+    });
+  });
